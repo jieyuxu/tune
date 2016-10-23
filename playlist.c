@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "playlist.h"
+#include <time.h>
 
 int codeFor(char ch) {
 	return ch - 'a';
@@ -37,7 +38,7 @@ song_node* find_song(char title[]){
 		if (search_song(play[x], title))
 			return search_song(play[x], title);
 	}
-	
+	return NULL;
 }
 
 void shuffle(int l){
