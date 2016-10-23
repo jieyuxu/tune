@@ -1,7 +1,7 @@
 #ifndef TUNEZ_H
 #define TUNEZ_H
 
-typedef struct n{ 
+typedef struct song_node{ 
   char title[256];
   char artist[256];
   struct song_node *next;
